@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<suite name='SelNG' parallel="methods" thread-count="9">
+  <parameter name="configFile" value="src/test/resources/config.properties"/>
+    
+  <test annotations="JDK" junit="false" name="selng_demo" verbose="5">
+    <parameter name="config-file" value="src/test/resources/config.properties"/>
+    <groups>
+      <run>
+        <include name="test"/>  
+       <!--  <include name="smokeTest"/>  -->
+          
+      </run>
+    </groups>	
+    <classes>     
+       <class name="com.test.TraderStoryRunner"> </class>
+    </classes>
+  </test>
+
+</suite>
